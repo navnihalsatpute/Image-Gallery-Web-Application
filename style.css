@@ -53,6 +53,7 @@ body{
     font-size: 30px;
     color: rgb(149, 149, 149);
     cursor: pointer;
+    transition: transform 200ms ease-in-out;
 }
 .exp-img #close:hover{
     color:rgb(243, 243, 243);
@@ -64,6 +65,7 @@ body{
     font-size: 30px;
     color: rgb(149, 149, 149);
     cursor: pointer;
+    transition: transform 200ms ease-in-out;
 }
 .exp-img #right{
     position: absolute;
@@ -72,7 +74,12 @@ body{
     font-size: 30px;
     color: rgb(149, 149, 149);
     cursor: pointer;
+    transition: transform 200ms ease-in-out;
 }
 #left:hover, #right:hover{
     color:rgb(253, 253, 253);
 }
+#left:active, #right:active, #close:active{
+    transform: scale(1.1);
+}
+
