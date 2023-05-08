@@ -1,7 +1,5 @@
 let expimgbg = document.getElementById("expimgbg");
 let expimg = document.getElementById("expimg");
-let left = document.getElementById("left");
-let right = document.getElementById("right");
 
 
 let openexpimg = function(imgaddress){
