@@ -11,7 +11,7 @@ let closeexpimg = function(){
     expimgbg.style.display = "none";
 };
 let currindex;
-let imgs = document.querySelectorAll('.gallery img');
+const imgs = document.querySelectorAll('.gallery img');
 
 
 let rightslide=function(){
@@ -39,3 +39,13 @@ let leftslide=function(){
     openexpimg(imgs[currindex].src);
 };
 
+
+//DOWNLOAD BUTTON
+let startdownload = function(){
+    var a = document.createElement('a');
+    a.href = expimg.src;
+    a.download = "image.jpg";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
